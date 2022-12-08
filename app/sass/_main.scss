@@ -1,0 +1,172 @@
+.main {
+
+    &__title {
+        font-weight: 700;
+        font-size: 38px;
+        line-height: 46px;
+        text-align: center;
+        color: #FFFFFF;
+        width: 315px;
+        margin-top: 129px;
+        padding: 0 15px;
+    }
+
+    &__arrow-btn {
+        background-image: url('../img/arrow.svg');
+        width: 20px;
+        height: 12px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        margin-right: 167px;
+        margin-left: 168px;
+        margin-top: 159px;
+        border: 2px solid #FFFFFF;
+        border-radius: 50%;
+        padding: 12px 15px;
+        background-color: transparent;
+    }
+
+    &__block {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(6, min-content);
+            row-gap: 30px;
+            margin: 30px 15px 0 15px;
+            padding-bottom: 60px;
+    }
+
+    &__list-title {
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 27px;
+            color: $active-regular;
+            margin-top: 30px;
+            margin-bottom: 15px;
+    }
+    
+    &__list-text {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+            color: #FFFFFF;
+            margin-top: 18px;
+    }
+       
+    }
+
+    @media (min-width: 768px) {
+        .main {
+            margin: 0 30px;
+
+            &__title {
+                font-weight: 700;
+                font-size: 38px;
+                line-height: 46px;
+                text-align: center;
+                color: #FFFFFF;
+                width: 800px;
+            }
+
+            &__arrow-btn {
+                margin-right: 364px;
+                margin-left: 364px;
+            }
+    
+            &__block {
+                grid-template-columns: 1fr 60px 1fr;
+                padding-bottom: 27px;
+            }
+            &__expiriense {
+                grid-column: 1 / 4;
+                grid-row: 1 / 2;
+            }
+            &__list-box-1 {
+                grid-column: 1 / 2;
+                grid-row: 3 / 4;
+                margin-top: 28px;
+            }
+            &__list-box-2 {
+                grid-column: 3 / 4;
+                grid-row: 3 / 4;
+                margin-top: 28px;
+            }
+            &__list-box-3 {
+                grid-column: 1 / 2;
+                grid-row: 4 / 5;
+                margin-top: 27px;
+            }
+            &__list-box-4 {
+                grid-column: 3 / 4;
+                grid-row: 4 / 5;
+                margin-top: 28px;
+            }
+            &__list-box-5 {
+                grid-column: 1 / 2;
+                grid-row: 5 / 6;
+                margin-top: 28px;
+            }
+            &__list-box-6 {
+                grid-column: 3 / 4;
+                grid-row: 5 / 6;
+                margin-top: 28px;
+            }
+        }
+    }
+    
+    
+    @media (min-width: 992px) {
+        .main {
+    
+            &__title {
+                font-weight: 700;
+                font-size: 38px;
+                line-height: 46px;
+                text-align: center;
+                color: #FFFFFF;
+                width: 800px;
+                margin-right: 112px;
+                margin-left: 112px;
+                margin-top: 386px;
+            }
+
+            &__arrow-btn {
+                margin-right: 504px;
+                margin-left: 504px;
+            }
+
+            &__block {
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: repeat(5, min-content);
+                row-gap: 37px;
+                column-gap: 60px;
+                margin: 23px 3px 0;
+            }
+            &__list-box-1 {
+                grid-column: 1 / 2;
+                grid-row: 3 / 4;
+            }
+            &__list-box-2 {
+                grid-column: 2 / 3;
+                grid-row: 3 / 4;
+            }
+            &__list-box-3 {
+                grid-column: 3 / 4;
+                grid-row: 3 / 4;
+            }
+            &__list-box-4 {
+                grid-column: 1 / 2;
+                grid-row: 4 / 5;
+                margin-top: 0;
+            }
+            &__list-box-5 {
+                grid-column: 2 / 3;
+                grid-row: 4 / 5;
+                margin-top: 0;
+            }
+            &__list-box-6 {
+                grid-column: 3 / 4;
+                grid-row: 4 / 5;
+                margin-top: 0;
+            }
+        }
+    }
